@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Final_Project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Final_Project_jar</output-path>
+    <root id="archive" name="Final_Project.jar">
+      <element id="module-output" name="Final_Project" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-base/18/javafx-base-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-controls/18/javafx-controls-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../mysql-connector-java-8.0.28/mysql-connector-java-8.0.28/mysql-connector-java-8.0.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-controls/18/javafx-controls-18-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-graphics/18/javafx-graphics-18-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-fxml/18/javafx-fxml-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-fxml/18/javafx-fxml-18-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-graphics/18/javafx-graphics-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../org/openjfx/javafx-base/18/javafx-base-18-win.jar" path-in-jar="/" />
+      <element id="library" level="project" name="mysql-connector-java-8.0.28" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:18" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:18" />
+    </root>
+  </artifact>
+</component>
