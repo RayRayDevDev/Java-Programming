@@ -7,7 +7,6 @@ class Main {
     public static void main(String[] args) {
         ArrayList<String> toDo = new ArrayList<>();
         Scanner userChoice = new Scanner(System.in); // For the Menu Selection.
-        Scanner userInput = new Scanner(System.in); // For the user's actual input.
 
         while (userChoice != 4) {
             // TODO: Implement User Selection menu.
@@ -26,7 +25,24 @@ class Main {
         }
     }
 
-    public static String addToToDoList() {
+    public static ArrayList addToToDoList(ArrayList toDoList) {
+        Scanner userInput = new Scanner(System.in); // For the user's actual input.
+        while (userInput != -1) { // Less likely trigger in a console application.
+            toDoList.add(userInput);
+        }
 
+        return toDoList;
+
+        if (userInput == -1) {
+            break;
+        }
+    }
+
+    public static ArrayList DeleteOnToDoList(ArrayList toDoList) {
+        Scanner userInput = new Scanner(System.in); // For the user's actual input.
+        while (userInput != -1) {
+            int i = userInput.nextInt();
+            toDoList.remove(i);
+        }
     }
 }
