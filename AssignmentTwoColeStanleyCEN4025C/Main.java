@@ -52,9 +52,10 @@ class Main {
 
     public static ArrayList DeleteOnToDoList(ArrayList toDoList) {
         Scanner userInput = new Scanner(System.in); // For the user's actual input.
-        while (userInput != -1) {
-            int i = userInput.nextInt();
+        int i = userInput.nextInt();
+        if (i < toDoList.size() && i != -1) {
             toDoList.remove(i);
         }
+        return toDoList;
     }
 }
