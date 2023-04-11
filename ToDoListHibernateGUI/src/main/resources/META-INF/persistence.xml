@@ -4,10 +4,10 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
              version="2.2">
     <persistence-unit name="ToDoListApp">
-        <class>dev.rayraydev.formythirdtricktodolist.ToDoList</class>
+        <class>dev.rayraydev.ToDoListHibernateConsole.ToDoList</class>
         <properties>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:sqlserver://COLESGAMINGPC\SQLEXPRESS:1433;database=hp;encrypt=false;trustServerCertificate=true;integratedSecurity=true"/>
+                      value="jdbc:sqlserver://ColesGamingPC\SQLEXPRESS:1433;database=hp;encrypt=false;trustServerCertificate=true;integratedSecurity=true"/>
             <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
         </properties>
     </persistence-unit>

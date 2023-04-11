@@ -7,29 +7,13 @@ import java.util.Objects;
 @Entity
 @Table(name = "toDoBasic", schema = "dbo", catalog = "hp")
 public class ToDoBasicEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "ID")
+    @Column(name = "ID", nullable = false, insertable = false, updatable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Basic
     @Column(name = "Note")
     private String note;
-
-    public int getNoteId() {
-        return id;
-    }
-
-    public void setNoteId(int id) {
-        this.id = id;
-    }
-
-    public String getNote() {
-        return note;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
-    }
 
     @Override
     public boolean equals(Object o) {

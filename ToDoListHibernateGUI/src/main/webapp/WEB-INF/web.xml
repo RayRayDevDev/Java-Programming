@@ -2,7 +2,8 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-         version="6.0">
+         version="6.0"
+         metadata-complete="true">
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
@@ -10,12 +11,11 @@
 
     <servlet>
         <servlet-name>ToDoListServlet</servlet-name>
-        <servlet-class>dev.rayraydev.formythirdtricktodolist.ToDoListServlet</servlet-class>
+        <servlet-class>dev.rayraydev.ToDoListHibernateConsole.ToDoListServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>ToDoListServlet</servlet-name>
         <url-pattern>/toDoList</url-pattern>
     </servlet-mapping>
-
 </web-app>
