@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Microsoft SQL Server" uuid="4658d239-ecd2-431e-bb4b-76759972fabd">
+    <data-source source="LOCAL" name="hp@COLESGAMINGPC" uuid="8cc97c92-b353-4ebc-85d6-b0f2a98dc3dd">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://COLESGAMINGPC\\SQLEXPRESS:1433;database=hp;encrypt=false;trustServerCertificate=true;integratedSecurity=true</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://COLESGAMINGPC\SQLEXPRESS:1433;database=hp;encrypt=false;trustServerCertificate=true;integratedSecurity=true</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
