@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ForMyThirdTrickToDoList:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01dc889b-98a2-441c-91fc-cb6cc960e8e4" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;ToDoListHibernateGUI/.idea/dataSources.xml&#10;#&#9;ToDoListHibernateGUI/.idea/misc.xml&#10;#&#9;ToDoListHibernateGUI/.idea/sqldialects.xml&#10;#&#9;ToDoListHibernateGUI/.idea/vcs.xml&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoList.java&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoListServlet.java" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OGATz3CPtOW9BKxLucNRg7gkr7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Cole/OneDrive/Documents/GitHub/Java-Programming/ToDoListHibernateConsole1/.idea/dataSources/8cc97c92-b353-4ebc-85d6-b0f2a98dc3dd/storage_v2/_src_/database/hp.CA0AAA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01dc889b-98a2-441c-91fc-cb6cc960e8e4" name="Changes" comment="" />
+      <created>1681176558087</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681176558087</updated>
+      <workItem from="1681176560253" duration="1097000" />
+      <workItem from="1681177678145" duration="590000" />
+      <workItem from="1681178296391" duration="752000" />
+      <workItem from="1681179092705" duration="5019000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fixity fix fix on WebGUI.">
+      <created>1681182689006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681182689006</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixity fix fix on WebGUI.">
+      <created>1681182740347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681182740347</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;ToDoListHibernateGUI/.idea/dataSources.xml&#10;#&#9;ToDoListHibernateGUI/.idea/misc.xml&#10;#&#9;ToDoListHibernateGUI/.idea/sqldialects.xml&#10;#&#9;ToDoListHibernateGUI/.idea/vcs.xml&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoList.java&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoListServlet.java">
+      <created>1681182789109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681182789109</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Fixity fix fix on WebGUI." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;ToDoListHibernateGUI/.idea/dataSources.xml&#10;#&#9;ToDoListHibernateGUI/.idea/misc.xml&#10;#&#9;ToDoListHibernateGUI/.idea/sqldialects.xml&#10;#&#9;ToDoListHibernateGUI/.idea/vcs.xml&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoList.java&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoListServlet.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;ToDoListHibernateGUI/.idea/dataSources.xml&#10;#&#9;ToDoListHibernateGUI/.idea/misc.xml&#10;#&#9;ToDoListHibernateGUI/.idea/sqldialects.xml&#10;#&#9;ToDoListHibernateGUI/.idea/vcs.xml&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoList.java&#10;#&#9;ToDoListHibernateGUI/src/main/java/dev/rayraydev/ToDoListHibernateConsole/ToDoListServlet.java" />
+  </component>
+</project>

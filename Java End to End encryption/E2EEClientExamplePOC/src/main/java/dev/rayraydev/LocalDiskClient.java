@@ -6,12 +6,12 @@ import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.security.SecureRandom;
 import java.util.Arrays;
+import java.util.Scanner;
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;
 import javax.crypto.CipherOutputStream;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-import org.apache.commons.io.FileUtils;
 
 public class LocalDiskClient {
 
@@ -21,25 +21,71 @@ public class LocalDiskClient {
     private static final int IV_SIZE = 16;
 
     public static void main(String[] args) throws Exception {
-        // Encrypt a file and save it to disk
-        File inputFile = new File("C://encryption//input_file.png");
-        File encryptedFile = new File("C://encryption//encrypted.enc");
-        File keyFile = new File("C://encryption//key.bin");
-        encryptFile(inputFile, encryptedFile, keyFile);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the directory path: ");
+        String inputDirPath = scanner.nextLine();
+        File inputDir = new File(inputDirPath);
+        File keyFile = new File(inputDir, "key.bin");
 
-        // Decrypt the encrypted file and save it to disk
-        File decryptedFile = new File("C://encryption//decrypted.png");
-        decryptFile(encryptedFile, decryptedFile, keyFile);
+        boolean running = true;
+        while (running) {
+            System.out.println("\nChoose an action:");
+            System.out.println("1. Encrypt files");
+            System.out.println("2. Decrypt files");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
 
-        // Verify that the decrypted file matches the original file
-        boolean filesMatch = FileUtils.contentEquals(inputFile, decryptedFile);
-        System.out.println("Files match: " + filesMatch);
+            switch (choice) {
+                case 1:
+                    for (File inputFile : inputDir.listFiles()) {
+                        if (inputFile.isFile() && !inputFile.getName().endsWith(".enc") && !inputFile.equals(keyFile)) {
+                            File encryptedFile = new File(inputFile.getParent(), inputFile.getName() + ".ra");
+                            encryptFile(inputFile, encryptedFile, keyFile);
+                        }
+                    }
+                    break;
+                case 2:
+                    for (File encryptedFile : inputDir.listFiles()) {
+                        if (encryptedFile.isFile() && encryptedFile.getName().endsWith(".ra")) {
+                            // Remove the ".ra" extension and restore the original file extension
+                            String originalFileName = encryptedFile.getName().replace(".ra", "");
+                            File decryptedFile = new File(encryptedFile.getParent(), originalFileName);
+                            decryptFile(encryptedFile, decryptedFile, keyFile);
+                        }
+                    }
+                    break;
+                case 3:
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice, please try again.");
+            }
+        }
+
+        scanner.close();
     }
 
 
+
     public static void encryptFile(File inputFile, File encryptedFile, File keyFile) throws Exception {
-        byte[] key = generateRandomBytes(KEY_SIZE);
-        byte[] iv = generateRandomBytes(IV_SIZE);
+        byte[] key;
+        byte[] iv;
+
+        if (keyFile.exists()) {
+            byte[] keyAndIV = Files.readAllBytes(keyFile.toPath());
+            key = Arrays.copyOfRange(keyAndIV, 0, KEY_SIZE);
+            iv = Arrays.copyOfRange(keyAndIV, KEY_SIZE, KEY_SIZE + IV_SIZE);
+        } else {
+            key = generateRandomBytes(KEY_SIZE);
+            iv = generateRandomBytes(IV_SIZE);
+            FileOutputStream keyOutputStream = new FileOutputStream(keyFile);
+            keyOutputStream.write(key);
+            keyOutputStream.write(iv);
+            keyOutputStream.close();
+            System.out.println("Key and IV saved to file.");
+        }
+
         SecretKeySpec keySpec = new SecretKeySpec(key, KEY_ALGORITHM);
         IvParameterSpec ivSpec = new IvParameterSpec(iv);
         Cipher cipher = Cipher.getInstance(ENCRYPTION_ALGORITHM);
@@ -51,14 +97,10 @@ public class LocalDiskClient {
         while ((len = inputStream.read(buf)) != -1) {
             outputStream.write(buf, 0, len);
         }
+        
         outputStream.close();
         inputStream.close();
         System.out.println("File encrypted successfully.");
-        FileOutputStream keyOutputStream = new FileOutputStream(keyFile);
-        keyOutputStream.write(key);
-        keyOutputStream.write(iv);
-        keyOutputStream.close();
-        System.out.println("Key and IV saved to file.");
     }
 
 
